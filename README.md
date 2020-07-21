@@ -8,3 +8,4 @@ My lousy attempt to make blockchain in C.
 ```
 sh compile.sh
 ./main
+```
