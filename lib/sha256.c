@@ -10,3 +10,5 @@
               offered in this implementation.
               Algorithm specification can be found here:
                * http://csrc.nist.gov/publications/fips/fips180-2/fips180-2withchangenotice.pdf
+              This implementation uses little endian byte order.
+*********************************************************************/
