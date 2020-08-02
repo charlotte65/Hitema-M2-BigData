@@ -23,3 +23,4 @@
 #define ROTRIGHT(a,b) (((a) >> (b)) | ((a) << (32-(b))))
 
 #define CH(x,y,z) (((x) & (y)) ^ (~(x) & (z)))
+#define MAJ(x,y,z) (((x) & (y)) ^ ((x) & (z)) ^ ((y) & (z)))
