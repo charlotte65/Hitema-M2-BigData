@@ -42,3 +42,4 @@ static const WORD k[64] = {
 };
 
 /*********************** FUNCTION DEFINITIONS ***********************/
+void sha256_transform(SHA256_CTX *ctx, const BYTE data[])
