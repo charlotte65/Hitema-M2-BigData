@@ -65,3 +65,4 @@ void sha256_transform(SHA256_CTX *ctx, const BYTE data[])
 		t2 = EP0(a) + MAJ(a,b,c);
 		h = g;
 		g = f;
+		f = e;
