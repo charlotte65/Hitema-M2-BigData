@@ -77,3 +77,6 @@ void sha256_transform(SHA256_CTX *ctx, const BYTE data[])
 	ctx->state[1] += b;
 	ctx->state[2] += c;
 	ctx->state[3] += d;
+	ctx->state[4] += e;
+	ctx->state[5] += f;
+	ctx->state[6] += g;
