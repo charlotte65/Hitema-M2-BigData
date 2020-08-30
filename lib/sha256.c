@@ -84,3 +84,4 @@ void sha256_transform(SHA256_CTX *ctx, const BYTE data[])
 }
 
 void sha256_init(SHA256_CTX *ctx)
+{
