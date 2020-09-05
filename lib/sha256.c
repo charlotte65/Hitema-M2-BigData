@@ -85,3 +85,6 @@ void sha256_transform(SHA256_CTX *ctx, const BYTE data[])
 
 void sha256_init(SHA256_CTX *ctx)
 {
+	ctx->datalen = 0;
+	ctx->bitlen = 0;
+	ctx->state[0] = 0x6a09e667;
