@@ -89,3 +89,6 @@ void sha256_init(SHA256_CTX *ctx)
 	ctx->bitlen = 0;
 	ctx->state[0] = 0x6a09e667;
 	ctx->state[1] = 0xbb67ae85;
+	ctx->state[2] = 0x3c6ef372;
+	ctx->state[3] = 0xa54ff53a;
+	ctx->state[4] = 0x510e527f;
