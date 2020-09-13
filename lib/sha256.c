@@ -96,3 +96,7 @@ void sha256_init(SHA256_CTX *ctx)
 	ctx->state[6] = 0x1f83d9ab;
 	ctx->state[7] = 0x5be0cd19;
 }
+
+void sha256_update(SHA256_CTX *ctx, const BYTE data[], size_t len)
+{
+	WORD i;
