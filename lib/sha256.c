@@ -108,3 +108,8 @@ void sha256_update(SHA256_CTX *ctx, const BYTE data[], size_t len)
 			sha256_transform(ctx, ctx->data);
 			ctx->bitlen += 512;
 			ctx->datalen = 0;
+		}
+	}
+}
+
+void sha256_final(SHA256_CTX *ctx, BYTE hash[])
