@@ -117,3 +117,8 @@ void sha256_final(SHA256_CTX *ctx, BYTE hash[])
 	WORD i;
 
 	i = ctx->datalen;
+
+	// Pad whatever data is left in the buffer.
+	if (ctx->datalen < 56) {
+		ctx->data[i++] = 0x80;
+		while (i < 56)
