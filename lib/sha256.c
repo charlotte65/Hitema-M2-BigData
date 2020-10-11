@@ -126,3 +126,5 @@ void sha256_final(SHA256_CTX *ctx, BYTE hash[])
 	}
 	else {
 		ctx->data[i++] = 0x80;
+		while (i < 64)
+			ctx->data[i++] = 0x00;
