@@ -131,3 +131,5 @@ void sha256_final(SHA256_CTX *ctx, BYTE hash[])
 		sha256_transform(ctx, ctx->data);
 		memset(ctx->data, 0, 56);
 	}
+
+	// Append to the padding the total message's length in bits and transform.
