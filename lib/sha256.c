@@ -140,3 +140,4 @@ void sha256_final(SHA256_CTX *ctx, BYTE hash[])
 	ctx->data[60] = ctx->bitlen >> 24;
 	ctx->data[59] = ctx->bitlen >> 32;
 	ctx->data[58] = ctx->bitlen >> 40;
+	ctx->data[57] = ctx->bitlen >> 48;
