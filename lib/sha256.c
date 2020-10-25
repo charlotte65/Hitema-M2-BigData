@@ -143,3 +143,5 @@ void sha256_final(SHA256_CTX *ctx, BYTE hash[])
 	ctx->data[57] = ctx->bitlen >> 48;
 	ctx->data[56] = ctx->bitlen >> 56;
 	sha256_transform(ctx, ctx->data);
+
+	// Since this implementation uses little endian byte ordering and SHA uses big endian,
