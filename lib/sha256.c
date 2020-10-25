@@ -145,3 +145,4 @@ void sha256_final(SHA256_CTX *ctx, BYTE hash[])
 	sha256_transform(ctx, ctx->data);
 
 	// Since this implementation uses little endian byte ordering and SHA uses big endian,
+	// reverse all the bytes when copying the final state to the output hash.
