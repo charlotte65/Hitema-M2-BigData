@@ -1,3 +1,3 @@
 /*********************************************************************
 * Filename:   sha256.h
-* Author:     Brad Conte (brad AT b
+* Author:     Brad Conte (brad AT bradc
