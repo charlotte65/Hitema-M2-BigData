@@ -3,4 +3,4 @@
 * Author:     Brad Conte (brad AT bradconte.com)
 * Copyright:
 * Disclaimer: This code is presented "as is" without any guarantees.
-* Details:    Defines the API for the corresp
+* Details:    Defines the API for the correspond
