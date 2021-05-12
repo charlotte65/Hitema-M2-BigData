@@ -6,4 +6,4 @@
 * Details:    Defines the API for the corresponding SHA1 implementation.
 *********************************************************************/
 
-#ifndef SHA2
+#ifndef SHA256
