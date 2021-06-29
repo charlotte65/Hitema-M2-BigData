@@ -10,4 +10,4 @@
 #define SHA256_H
 
 /*************************** HEADER FILES ***************************/
-#include <stdde
+#include <stddef.h
