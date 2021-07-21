@@ -13,4 +13,4 @@
 #include <stddef.h>
 
 /****************************** MACROS ******************************/
-#define SHA25
+#define SHA256_BL
