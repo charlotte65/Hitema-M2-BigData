@@ -13,4 +13,4 @@
 #include <stddef.h>
 
 /****************************** MACROS ******************************/
-#define SHA256_BLOCK_SIZE
+#define SHA256_BLOCK_SIZE 32
