@@ -16,4 +16,4 @@
 #define SHA256_BLOCK_SIZE 32            // SHA256 outputs a 32 byte digest
 
 /**************************** DATA TYPES ****************************/
-typedef unsigned char BYTE;             // 8-bit byt
+typedef unsigned char BYTE;             // 8-bit byte
