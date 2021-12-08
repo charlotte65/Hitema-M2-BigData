@@ -17,4 +17,4 @@
 
 /**************************** DATA TYPES ****************************/
 typedef unsigned char BYTE;             // 8-bit byte
-typedef unsigned int  
+typedef unsigned int  WORD
