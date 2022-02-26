@@ -23,4 +23,4 @@ typedef struct {
 	BYTE data[64];
 	WORD datalen;
 	unsigned long long bitlen;
-	
+	W
