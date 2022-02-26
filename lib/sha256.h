@@ -22,4 +22,5 @@ typedef unsigned int  WORD;             // 32-bit word, change to "long" for 16-
 typedef struct {
 	BYTE data[64];
 	WORD datalen;
-	unsigned long long bitlen
+	unsigned long long bitlen;
+	
