@@ -24,4 +24,4 @@ typedef struct {
 	WORD datalen;
 	unsigned long long bitlen;
 	WORD state[8];
-} S
+} SHA2
