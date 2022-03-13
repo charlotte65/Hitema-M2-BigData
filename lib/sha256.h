@@ -25,3 +25,5 @@ typedef struct {
 	unsigned long long bitlen;
 	WORD state[8];
 } SHA256_CTX;
+
+/*
