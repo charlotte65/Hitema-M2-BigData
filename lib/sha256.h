@@ -26,4 +26,4 @@ typedef struct {
 	WORD state[8];
 } SHA256_CTX;
 
-/***
+/*******
