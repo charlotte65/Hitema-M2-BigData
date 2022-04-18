@@ -28,4 +28,4 @@ typedef struct {
 
 /*********************** FUNCTION DECLARATIONS **********************/
 void sha256_init(SHA256_CTX *ctx);
-void sha256
+void sha256_upd
