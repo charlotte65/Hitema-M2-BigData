@@ -12,3 +12,5 @@ int main() {
     for (int i = 0; i < bc -> length; i++) {
         printf("Timestamp: %d\n", bc -> blocks[i] -> timestamp);
         printf("Prev. hash: ");
+        for (int j = 0; j < 32; j++) {
+            printf("%d,", bc -> blocks[i] -> prevBlockHash[j]);
