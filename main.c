@@ -14,3 +14,6 @@ int main() {
         printf("Prev. hash: ");
         for (int j = 0; j < 32; j++) {
             printf("%d,", bc -> blocks[i] -> prevBlockHash[j]);
+        }
+        printf("\n");
+        printf("Data: %s\n", bc -> blocks[i] -> data);
