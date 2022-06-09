@@ -17,3 +17,6 @@ int main() {
         }
         printf("\n");
         printf("Data: %s\n", bc -> blocks[i] -> data);
+        printf("Nonce: %d\n", bc -> blocks[i] -> nonce);
+        printf("Hash: ");
+         for (int j = 0; j < 32; j++) {
