@@ -20,3 +20,10 @@ int main() {
         printf("Nonce: %d\n", bc -> blocks[i] -> nonce);
         printf("Hash: ");
          for (int j = 0; j < 32; j++) {
+            printf("%d,", bc -> blocks[i] -> hash[j]);
+        }
+        printf("\n");
+        printf("\n");
+    }
+    return 0;
+}
