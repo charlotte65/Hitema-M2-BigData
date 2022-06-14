@@ -8,3 +8,5 @@
 
 BYTE* sha256(BYTE* data, size_t len) {
     /* 
+        Creates 32-byte hash from data with size len using SHA256 algorithm
+        wrapper around lib/sha256.c
