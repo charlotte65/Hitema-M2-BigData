@@ -17,3 +17,5 @@ BYTE* sha256(BYTE* data, size_t len) {
 
     BYTE* hash = malloc(sizeof(BYTE) * 32);
     sha256_final(&myCtx, hash);
+    return hash;
+} 
