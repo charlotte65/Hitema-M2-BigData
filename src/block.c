@@ -19,3 +19,8 @@ BYTE* sha256(BYTE* data, size_t len) {
     sha256_final(&myCtx, hash);
     return hash;
 } 
+
+BYTE* generateBlockHash(Block* block) {
+    /* 
+        generates hash of the block from its data, previous block hash, and timestamp
+    */
