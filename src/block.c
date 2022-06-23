@@ -24,3 +24,5 @@ BYTE* generateBlockHash(Block* block) {
     /* 
         generates hash of the block from its data, previous block hash, and timestamp
     */
+    if (block == NULL) {
+        printf("generateBlockHash | block pointer is NULL\n");
