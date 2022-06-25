@@ -28,3 +28,6 @@ BYTE* generateBlockHash(Block* block) {
         printf("generateBlockHash | block pointer is NULL\n");
         exit(1);
     }
+
+    BYTE timestampStr[20];
+    sprintf(timestampStr, "%u", block -> timestamp); 
