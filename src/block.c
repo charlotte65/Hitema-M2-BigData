@@ -26,3 +26,5 @@ BYTE* generateBlockHash(Block* block) {
     */
     if (block == NULL) {
         printf("generateBlockHash | block pointer is NULL\n");
+        exit(1);
+    }
