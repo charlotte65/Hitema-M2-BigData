@@ -31,3 +31,7 @@ BYTE* generateBlockHash(Block* block) {
 
     BYTE timestampStr[20];
     sprintf(timestampStr, "%u", block -> timestamp); 
+
+    size_t headersSize = strlen(timestampStr) + strlen(block -> prevBlockHash) + strlen(block -> data);
+    BYTE* headers = malloc(sizeof(BYTE) * headersSize);
+    headers[0] = '\0';
