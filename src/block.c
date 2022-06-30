@@ -38,3 +38,4 @@ BYTE* generateBlockHash(Block* block) {
 
     strcat(headers, block -> prevBlockHash);
     strcat(headers, block -> data);
+    strcat(headers, timestampStr);
