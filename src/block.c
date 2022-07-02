@@ -44,3 +44,6 @@ BYTE* generateBlockHash(Block* block) {
     free(headers);
     return hash;
 }
+
+Block* createBlock(BYTE* data, BYTE* prevBlockHash) {
+    /* 
