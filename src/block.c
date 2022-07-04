@@ -47,3 +47,6 @@ BYTE* generateBlockHash(Block* block) {
 
 Block* createBlock(BYTE* data, BYTE* prevBlockHash) {
     /* 
+        Creates a block with given data and previous block hash
+    */
+    Block* block = malloc(sizeof(Block));
