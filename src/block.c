@@ -53,3 +53,4 @@ Block* createBlock(BYTE* data, BYTE* prevBlockHash) {
 
     block -> timestamp = (unsigned long) time(NULL);
     block -> data = data;
+    block -> prevBlockHash = prevBlockHash;
