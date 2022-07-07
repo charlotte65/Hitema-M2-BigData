@@ -52,3 +52,4 @@ Block* createBlock(BYTE* data, BYTE* prevBlockHash) {
     Block* block = malloc(sizeof(Block));
 
     block -> timestamp = (unsigned long) time(NULL);
+    block -> data = data;
