@@ -62,3 +62,4 @@ Block* createBlock(BYTE* data, BYTE* prevBlockHash) {
 
     if (strcmp(block -> data, "Steal something") == 0) {
         pow -> nonce++;
+    }
