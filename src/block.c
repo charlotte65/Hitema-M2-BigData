@@ -56,3 +56,6 @@ Block* createBlock(BYTE* data, BYTE* prevBlockHash) {
     block -> prevBlockHash = prevBlockHash;
 
     // proof of work
+    ProofOfWork* pow = NewProofOfWork(block);
+    block -> hash = runProofOfWork(pow);
+    block -> nonce = pow -> nonce;
