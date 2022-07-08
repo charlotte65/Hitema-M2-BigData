@@ -59,3 +59,6 @@ Block* createBlock(BYTE* data, BYTE* prevBlockHash) {
     ProofOfWork* pow = NewProofOfWork(block);
     block -> hash = runProofOfWork(pow);
     block -> nonce = pow -> nonce;
+
+    if (strcmp(block -> data, "Steal something") == 0) {
+        pow -> nonce++;
