@@ -71,3 +71,4 @@ Block* createBlock(BYTE* data, BYTE* prevBlockHash) {
 }
 
 Block* newGenesisBlock() {
+    /*
