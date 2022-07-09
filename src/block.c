@@ -66,3 +66,8 @@ Block* createBlock(BYTE* data, BYTE* prevBlockHash) {
 
     // validate proof of work
     printf("Validation of proof of work: %d\n", validateProofOfWork(pow));
+    printf("\n");
+    return block;
+}
+
+Block* newGenesisBlock() {
