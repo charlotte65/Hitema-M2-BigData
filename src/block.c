@@ -72,3 +72,7 @@ Block* createBlock(BYTE* data, BYTE* prevBlockHash) {
 
 Block* newGenesisBlock() {
     /*
+        Creates genesis block (first block in blockchain)
+    */
+    return createBlock("Genesis Block", "");
+}
