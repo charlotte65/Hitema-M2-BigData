@@ -9,3 +9,5 @@ typedef struct{
     BYTE* prevBlockHash;
     BYTE* hash;
 } Block;
+
+Block* createBlock(BYTE* data, BYTE* prevBlockHash);
