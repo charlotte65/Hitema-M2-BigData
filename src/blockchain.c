@@ -4,4 +4,4 @@
 #include <time.h>
 #include "blockchain.h"
 
-void AddBlock(Blockchai
+void AddBlock(Blockchain*
