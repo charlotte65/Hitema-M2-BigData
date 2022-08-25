@@ -5,3 +5,4 @@
 #include "blockchain.h"
 
 void AddBlock(Blockchain* bc, BYTE* data) {
+ 
