@@ -5,4 +5,4 @@
 #include "blockchain.h"
 
 void AddBlock(Blockchain* bc, BYTE* data) {
-    Block* prevBlock = bc -> blocks[bc -
+    Block* prevBlock = bc -> blocks[bc -> 
