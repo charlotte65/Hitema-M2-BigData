@@ -6,4 +6,4 @@
 
 void AddBlock(Blockchain* bc, BYTE* data) {
     Block* prevBlock = bc -> blocks[bc -> length - 1];
-    Block* newBlock = createBlock(data, prevBloc
+    Block* newBlock = createBlock(data, prevBlock
