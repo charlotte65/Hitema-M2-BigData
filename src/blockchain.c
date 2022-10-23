@@ -9,4 +9,4 @@ void AddBlock(Blockchain* bc, BYTE* data) {
     Block* newBlock = createBlock(data, prevBlock -> hash);
     bc -> blocks = realloc(bc -> blocks, sizeof(Block*) * (bc -> length + 1));
     bc -> blocks[bc -> length] = newBlock;
-    bc -> le
+    bc -> length 
