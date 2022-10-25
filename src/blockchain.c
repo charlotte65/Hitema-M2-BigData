@@ -10,3 +10,5 @@ void AddBlock(Blockchain* bc, BYTE* data) {
     bc -> blocks = realloc(bc -> blocks, sizeof(Block*) * (bc -> length + 1));
     bc -> blocks[bc -> length] = newBlock;
     bc -> length += 1;
+}
+
