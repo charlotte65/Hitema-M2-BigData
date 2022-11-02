@@ -12,4 +12,4 @@ void AddBlock(Blockchain* bc, BYTE* data) {
     bc -> length += 1;
 }
 
-Blockchain* createBl
+Blockchain* createBlock
