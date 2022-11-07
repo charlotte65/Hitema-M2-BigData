@@ -13,4 +13,4 @@ void AddBlock(Blockchain* bc, BYTE* data) {
 }
 
 Blockchain* createBlockChain() {
-    Blockchain* bc = mal
+    Blockchain* bc = malloc
