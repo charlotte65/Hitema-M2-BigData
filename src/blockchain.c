@@ -13,4 +13,5 @@ void AddBlock(Blockchain* bc, BYTE* data) {
 }
 
 Blockchain* createBlockChain() {
-    Blockchain* bc = malloc(sizeof(Blockchain))
+    Blockchain* bc = malloc(sizeof(Blockchain));
+    b
