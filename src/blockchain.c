@@ -17,4 +17,4 @@ Blockchain* createBlockChain() {
     bc -> blocks = malloc(sizeof(Block*));
 
     Block* genesisBlock = newGenesisBlock();
-    bc ->
+    bc -> 
