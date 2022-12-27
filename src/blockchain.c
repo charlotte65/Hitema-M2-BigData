@@ -19,4 +19,4 @@ Blockchain* createBlockChain() {
     Block* genesisBlock = newGenesisBlock();
     bc -> blocks[0] = genesisBlock;
 
-    bc 
+    bc ->
