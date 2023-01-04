@@ -20,4 +20,4 @@ Blockchain* createBlockChain() {
     bc -> blocks[0] = genesisBlock;
 
     bc -> length = 1;
-    r
+    ret
