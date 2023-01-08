@@ -21,3 +21,4 @@ Blockchain* createBlockChain() {
 
     bc -> length = 1;
     return bc;
+}
