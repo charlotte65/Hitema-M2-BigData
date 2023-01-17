@@ -18,3 +18,8 @@ ProofOfWork* NewProofOfWork(Block* b) {
     for (int i = 0; i < targetBits; i++) {
         target = strcat(target, "0");
     }
+
+    ProofOfWork* pow = malloc(sizeof(ProofOfWork));
+    pow -> block = b;
+    pow -> target = target;
+    pow -> nonce = 0;
