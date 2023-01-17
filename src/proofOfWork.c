@@ -13,3 +13,8 @@ int startsWith(const char *str, const char *pre)
 }
 
 ProofOfWork* NewProofOfWork(Block* b) {
+    BYTE* target = malloc(sizeof(BYTE) * (targetBits + 1));
+    target[0] = '\0';
+    for (int i = 0; i < targetBits; i++) {
+        target = strcat(target, "0");
+    }
