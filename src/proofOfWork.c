@@ -23,3 +23,5 @@ ProofOfWork* NewProofOfWork(Block* b) {
     pow -> block = b;
     pow -> target = target;
     pow -> nonce = 0;
+    return pow;
+}
