@@ -25,3 +25,7 @@ ProofOfWork* NewProofOfWork(Block* b) {
     pow -> nonce = 0;
     return pow;
 }
+
+BYTE* prepareData(ProofOfWork* pow) {
+    BYTE timestampStr[20];
+    sprintf(timestampStr, "%lx", pow -> block -> timestamp); 
