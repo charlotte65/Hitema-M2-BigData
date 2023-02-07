@@ -29,3 +29,5 @@ ProofOfWork* NewProofOfWork(Block* b) {
 BYTE* prepareData(ProofOfWork* pow) {
     BYTE timestampStr[20];
     sprintf(timestampStr, "%lx", pow -> block -> timestamp); 
+
+    BYTE nonceStr[20];
