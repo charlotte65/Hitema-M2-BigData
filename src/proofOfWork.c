@@ -31,3 +31,7 @@ BYTE* prepareData(ProofOfWork* pow) {
     sprintf(timestampStr, "%lx", pow -> block -> timestamp); 
 
     BYTE nonceStr[20];
+    sprintf(nonceStr, "%lx", pow -> nonce); 
+
+    BYTE targetBitsStr[20];
+    sprintf(targetBitsStr, "%x", targetBits); 
