@@ -35,3 +35,9 @@ BYTE* prepareData(ProofOfWork* pow) {
 
     BYTE targetBitsStr[20];
     sprintf(targetBitsStr, "%x", targetBits); 
+
+    size_t dataSize = strlen(timestampStr) + strlen(pow -> block -> prevBlockHash) + strlen(pow -> block -> data) + strlen(targetBitsStr) + strlen(nonceStr) + (size_t) 1;
+    BYTE* data = malloc(sizeof(BYTE) * dataSize);
+    data[0] = '\0';
+
+    strcat(data, pow -> block -> prevBlockHash);
