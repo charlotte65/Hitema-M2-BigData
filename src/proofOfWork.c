@@ -51,3 +51,6 @@ BYTE* prepareData(ProofOfWork* pow) {
 int validateProofOfWork(ProofOfWork* pow) {
     BYTE* data = prepareData(pow);
     BYTE* hash = sha256(data, strlen(data));
+
+    return strcmp(hash, pow -> block -> hash) == 0; 
+}
