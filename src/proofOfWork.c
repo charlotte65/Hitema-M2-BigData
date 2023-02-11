@@ -45,3 +45,9 @@ BYTE* prepareData(ProofOfWork* pow) {
     strcat(data, timestampStr);
     strcat(data, targetBitsStr);
     strcat(data, nonceStr);
+    return data;
+}
+
+int validateProofOfWork(ProofOfWork* pow) {
+    BYTE* data = prepareData(pow);
+    BYTE* hash = sha256(data, strlen(data));
