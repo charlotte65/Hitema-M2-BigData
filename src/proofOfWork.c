@@ -42,3 +42,6 @@ BYTE* prepareData(ProofOfWork* pow) {
 
     strcat(data, pow -> block -> prevBlockHash);
     strcat(data, pow -> block -> data);
+    strcat(data, timestampStr);
+    strcat(data, targetBitsStr);
+    strcat(data, nonceStr);
