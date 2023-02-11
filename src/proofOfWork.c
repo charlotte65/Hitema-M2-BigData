@@ -54,3 +54,7 @@ int validateProofOfWork(ProofOfWork* pow) {
 
     return strcmp(hash, pow -> block -> hash) == 0; 
 }
+
+BYTE* runProofOfWork(ProofOfWork* pow) {
+    BYTE* hash;
+    BYTE* data;
