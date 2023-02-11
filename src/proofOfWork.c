@@ -41,3 +41,4 @@ BYTE* prepareData(ProofOfWork* pow) {
     data[0] = '\0';
 
     strcat(data, pow -> block -> prevBlockHash);
+    strcat(data, pow -> block -> data);
