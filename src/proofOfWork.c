@@ -58,3 +58,5 @@ int validateProofOfWork(ProofOfWork* pow) {
 BYTE* runProofOfWork(ProofOfWork* pow) {
     BYTE* hash;
     BYTE* data;
+    printf("Mining the block containting '%s'...\n", pow -> block -> data);
+    
