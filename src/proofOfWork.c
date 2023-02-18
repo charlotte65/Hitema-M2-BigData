@@ -60,3 +60,5 @@ BYTE* runProofOfWork(ProofOfWork* pow) {
     BYTE* data;
     printf("Mining the block containting '%s'...\n", pow -> block -> data);
     
+    while (pow -> nonce < ULONG_MAX) {
+        data = prepareData(pow);
