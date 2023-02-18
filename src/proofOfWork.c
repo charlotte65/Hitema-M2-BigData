@@ -63,3 +63,5 @@ BYTE* runProofOfWork(ProofOfWork* pow) {
     while (pow -> nonce < ULONG_MAX) {
         data = prepareData(pow);
         hash = sha256(data, strlen(data));
+        printf("\r");
+        for (int j = 0; j < 32; j++) {
