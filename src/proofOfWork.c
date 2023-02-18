@@ -65,3 +65,9 @@ BYTE* runProofOfWork(ProofOfWork* pow) {
         hash = sha256(data, strlen(data));
         printf("\r");
         for (int j = 0; j < 32; j++) {
+            printf("%d,", hash[j]);
+        }
+
+        if (startsWith(hash, pow -> target)) {
+            printf("\nMined! (nonce=%d)\n", pow -> nonce);
+            break;
