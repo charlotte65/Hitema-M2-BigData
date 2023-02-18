@@ -62,3 +62,4 @@ BYTE* runProofOfWork(ProofOfWork* pow) {
     
     while (pow -> nonce < ULONG_MAX) {
         data = prepareData(pow);
+        hash = sha256(data, strlen(data));
