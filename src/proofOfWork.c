@@ -71,3 +71,8 @@ BYTE* runProofOfWork(ProofOfWork* pow) {
         if (startsWith(hash, pow -> target)) {
             printf("\nMined! (nonce=%d)\n", pow -> nonce);
             break;
+        }
+        
+        free(hash);
+
+        pow -> nonce++;
