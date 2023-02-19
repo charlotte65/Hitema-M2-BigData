@@ -76,3 +76,4 @@ BYTE* runProofOfWork(ProofOfWork* pow) {
         free(hash);
 
         pow -> nonce++;
+    }
