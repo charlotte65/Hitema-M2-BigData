@@ -77,3 +77,8 @@ BYTE* runProofOfWork(ProofOfWork* pow) {
 
         pow -> nonce++;
     }
+
+    pow -> block -> nonce = pow -> nonce;
+
+    return hash;
+}
