@@ -3,3 +3,6 @@
 
 typedef struct {
     Block* block;
+    BYTE* target;
+    long unsigned int nonce;
+} ProofOfWork;
