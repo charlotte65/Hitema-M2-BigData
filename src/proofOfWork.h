@@ -6,3 +6,6 @@ typedef struct {
     BYTE* target;
     long unsigned int nonce;
 } ProofOfWork;
+
+ProofOfWork* NewProofOfWork(Block* b);
+BYTE* runProofOfWork(ProofOfWork* pow);
