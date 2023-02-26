@@ -9,3 +9,4 @@ typedef struct {
 
 ProofOfWork* NewProofOfWork(Block* b);
 BYTE* runProofOfWork(ProofOfWork* pow);
+int validateProofOfWork(ProofOfWork* pow);
